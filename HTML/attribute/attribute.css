@@ -1,0 +1,17 @@
+/* target by id */
+#h2 {
+    color:rgb(233, 124, 21);
+    /* font-size: 40px; */
+}
+
+/* target by class */
+.h2 {
+    font-size: 30px;
+}
+
+/* target by tag name */
+h2 {
+    /* background-color: yellow;  */
+    text-decoration: underline;
+    /* font-size: 10px; */
+}
