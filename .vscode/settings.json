@@ -1,3 +1,4 @@
 {
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "livePreview.defaultPreviewPath": "/HTML/table/table.html"
 }
