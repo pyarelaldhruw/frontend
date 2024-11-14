@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            width: 50px;
+            height: 50px;
+            /* background-color: red; */
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        #display{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <input type="number" id="number" placeholder="Enter Number Of Box" required>
+        <input type="color" id="color"> 
+        <button type="submit" id="button">Generate Box</button>
+
+    </form>
+    <div id="display">
+
+    </div>
+
+    <script>
+        let button = document.getElementById("button");
+        let color=document.getElementById("color");
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.getElementById("display").innerHTML=""
+            for (let i = 1; i <=Number(document.getElementById("number").value); i++) {
+                document.getElementById("display").innerHTML += `
+                <div class="div" style="background-color:${color.value}">${i}</div>
+                `
+
+            }
+
+        })
+
+
+    </script>
+
+</body>
+
+</html>
