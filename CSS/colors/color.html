@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            /* RGB-Red,Green,Blue */
+            /* RGBA-Red,Green,Blue,Alpha */
+            /* hsl-hue saturation lightness alpha */
+            /* hsla-hue saturation lightness alpha */
+
+            /* Hexacode-3 Number-#000 to #fff or 6 Number-#000000 to #ffffff */
+            /* 0 1 2 3 4 5 6 7 8 9 a b c d e f */
+
+            color: #096168;
+            font-size: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>COLOR</h1>
+    <button type="button" onclick="change()">Change Color</button>
+
+
+
+
+    <script>
+        function change() {
+            setInterval(() => {
+                let color = Math.round((1000000 + Math.random() * 999999)).toString(16)
+
+                document.querySelector("h1").style.color = "#" + color
+            },4000)
+        }
+    </script>
+
+</body>
+
+</html>
