@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --red:#ff0000;
+            --green:#00ff00;
+            --blue:#0000ff;
+            --yellow:#ffff00;
+            --aqua:#00ffff;
+            --purple:#ff00ff;
+            --white:#ffffff;
+            --black:#000000;
+        }
+        body{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            /* background-image: linear-gradient(direction, color1, color2......); */
+            /* background-image: linear-gradient(to right, var(--red), var(--green), var(--blue));
+            background-image: linear-gradient(to left, var(--red), var(--green), var(--blue));
+            background-image: linear-gradient(to bottom, var(--red), var(--green), var(--blue));
+            background-image: linear-gradient(to top, var(--red), var(--green), var(--blue));
+            background-image: linear-gradient(to bottom right, var(--red), var(--green), var(--blue));
+            background-image: linear-gradient(to top right, var(--red), var(--green), var(--blue));
+            background-image: linear-gradient(to bottom left, var(--red), var(--green), var(--blue));
+            background-image: linear-gradient(to top left, var(--red), var(--green), var(--blue)); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div style="background-image: linear-gradient(to right, var(--red), var(--green), var(--blue));">Right</div>
+    <div style="background-image: linear-gradient(to left, var(--red), var(--green), var(--blue));">Left</div>
+    <div style="background-image: linear-gradient(to bottom, var(--red), var(--green), var(--blue));">Bottom</div>
+    <div style="background-image: linear-gradient(to top, var(--red), var(--green), var(--blue));">Top</div>
+    <div style="background-image: linear-gradient(to bottom right, var(--red), var(--green), var(--blue));">Bottom <br>Right</div>
+    <div style="background-image: linear-gradient(to top Left, var(--red), var(--green), var(--blue));">Top Left</div>
+    <div style="background-image: linear-gradient(to top right, var(--red), var(--green), var(--blue));">Top Right</div>
+    <div style="background-image: linear-gradient(to bottom left, var(--red), var(--green), var(--blue));">Bottom <br> Left</div> -->
+
+
+    <!-- <div style="background-image: linear-gradient(0deg, var(--red), var(--green), var(--blue));">Top &#8593;</div>
+    <div style="background-image: linear-gradient(90deg, var(--red), var(--green), var(--blue));">Right <br> &#8594;</div>
+    <div style="background-image: linear-gradient(180deg, var(--red), var(--green), var(--blue));">Bottom  &#8595;</div>
+    <div style="background-image: linear-gradient(-90deg, var(--red), var(--green), var(--blue));">Left <br> &#8592;</div> -->
+    
+    <!-- reapeating linear gradiant -->
+     <div style="background-image: repeating-linear-gradient(to right, var(--red), var(--green), var(--blue) 20%);">Right &#8594;</div>
+     <div style="background-image: repeating-linear-gradient(to left, var(--red), var(--green), var(--blue) 20%);">Left &#8592;</div>
+     <div style="background-image: repeating-linear-gradient(to bottom, var(--red), var(--green), var(--blue) 20%);">Bottom &#8595;</div>
+     <div style="background-image: repeating-linear-gradient(to top, var(--red), var(--green), var(--blue) 20%);">Top &#8593;</div>
+</body>
+</html>
