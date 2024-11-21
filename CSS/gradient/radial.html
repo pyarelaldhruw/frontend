@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --red:#ff0000;
+            --green:#00ff00;
+            --yellow:#ffff00;
+            --black:#000000;
+            --white:#ffffff;
+        }
+        div{
+            width: 200px;
+            height: 150px;
+            /* border-radius: 50%; */
+            background-image: radial-gradient(circle, var(--red) 10%, var(--yellow) 30%, var(--black) 60%);
+            background-image: radial-gradient(ellipse, var(--red), var(--yellow), var(--black));
+        }
+    </style>
+</head>
+<body>
+    <div>
+        radial
+    </div>
+    
+</body>
+</html>
