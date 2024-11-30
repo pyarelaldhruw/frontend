@@ -156,6 +156,84 @@
             }
         }
     </style>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 600px;
+            height: 400px;
+            border: 5px solid #934048;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .div2 {
+                width: 500px;
+                height: 300px;
+                border: 5px solid #123456;
+                position: relative;
+
+                .div3,
+                .div4,
+                .div5,
+                .div6,
+                .div7 {
+                    width: 50px;
+                    height: 50px;
+                    border: 5px solid #808541;
+                    position: absolute;
+                }
+                .div3{
+                    top: 10px;
+                    left: 10px;
+                }
+                .div4{
+                    top: 10px;
+                    right: 10px;
+                }
+                .div5{
+                    top: 110px;
+                    left: 205px;
+                }
+                .div6{
+                    bottom: 10px;
+                    left: 10px;
+                }
+                .div7{
+                    bottom: 10px;
+                    right: 10px;
+                }
+
+
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="div3"></div>
+            <div class="div4"></div>
+            <div class="div5"></div>
+            <div class="div6"></div>
+            <div class="div7"></div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
 
 </body>
 
