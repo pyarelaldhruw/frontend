@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            width: 100%;
+            height: auto;
+            border: 5px solid rgb(18, 32, 226);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+
+        }
+        .div1{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: start;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: brown;
+            }
+        }
+        .div2{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: flex-start;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: #458623;
+            }
+        }
+        .div3{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: end;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: #123456;
+            }
+        }
+        .div4{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: flex-end;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: #987456;
+            }
+        }
+        .div5{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: center;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: #552288;
+            }
+        }
+        .div6{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: space-between;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: #369258;
+            }
+        }
+        .div7{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: space-evenly;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: #963582;
+            }
+        }
+        .div8{
+            gap: 5px;
+
+            /* flexbox */
+            display: flex;
+            justify-content: space-around;
+            
+            .flex-items {
+                width: 50px;
+                height: 50px;
+                background-color: #00ffff;
+            }
+        }
+        
+
+ 
+    </style>
+</head>
+
+<body>
+    <section class="flex-container">
+        <div class="div1">
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <h1>start</h1>
+        </div>
+        <div class="div2">
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <h1>flex-start</h1>
+        </div>
+        <div class="div3">
+            <h1>End</h1>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            
+        </div>
+        <div class="div4">
+            <h1>Flex-End</h1>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+        </div>
+        <div class="div5">
+            <h1>Center</h1>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <h1>Center</h1>
+        </div>
+        <div class="div6">
+            <div class="flex-items">Space Between</div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items">Space Between</div>
+        </div>
+        <div class="div7">
+            <div class="flex-items">Space Evenly</div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items">Space Evenly</div>
+        </div>
+        <div class="div8">
+            <div class="flex-items">Space Around</div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items">Space Around</div>
+        </div>
+    </section>
+</body>
+
+</html>
