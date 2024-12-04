@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            padding: 20px;
+
+        }
+
+        .left {
+            width: 30%;
+            height: 1000px;
+            font-size: 10px;
+            margin-top: 40px;
+           
+            h1{
+                height: 200px;
+                padding: 110px 0px;
+               
+            }
+        }
+
+        .right {
+            width: 70%;
+            /* height: 600px; */
+            
+        }
+        
+        .fc1, .fc2, .fc3, .fc4, .fc6 {
+            width: 100%;
+            height: 200px;
+            margin: 30px 0px;
+            border: 5px solid blue;
+            display: flex;
+            gap: 5px;
+
+
+            .flex-items {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .fc1 {
+            align-items: normal;
+            .flex-items {
+                background-color: #123;
+            }
+        }
+
+        .fc2 {
+            align-items: flex-start;
+            .flex-items {
+                background-color: #167;
+            }
+        }
+
+        .fc3 {
+            align-items: flex-end;
+            .flex-items {
+                background-color: #451;
+            }
+        }
+
+        .fc4 {
+            align-items: center;
+            .flex-items {
+                background-color: #258;
+            }
+        }
+
+        .fc5 {
+            width: 100%;
+            height: 200px;
+            margin: 30px 0px;
+            border: 5px solid blue;
+            display: flex;
+            gap: 5px;
+            align-items: stretch;
+
+
+            .flex-items1 {
+                width: 50px;
+                min-height: 50px;
+                background-color: #123;
+            }
+        }
+
+        .fc6 {
+            align-items: baseline;
+            .flex-items {                
+                background-color: #520;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <h1>Normal</h1>
+        <h1>Flex Start</h1>
+        <h1>Flex end</h1>
+        <h1>Center</h1>
+        <h1>stretch</h1>
+        <h1>Baseline</h1>
+
+    </div>
+    <div class="right">
+        <div class="fc1">
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+
+        </div>
+        <div class="fc2">
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+
+        </div>
+        <div class="fc3">
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+
+        </div>
+        <div class="fc4">
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+            <div class="flex-items"></div>
+
+        </div>
+        <div class="fc5">
+            <div class="flex-items1"></div>
+            <div class="flex-items1"></div>
+            <div class="flex-items1"></div> 
+            <div class="flex-items1"></div>
+            <div class="flex-items1"></div>
+
+        </div>
+        <div class="fc6">
+            <div  style="height: 100px;" class="flex-items"></div>
+            <div style="height: 70px;" class="flex-items"></div>
+            <div style="height: 120px;" class="flex-items"></div>
+            <div style="height: 150px;" class="flex-items"></div>
+            <div style="height: 90px;" class="flex-items"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
