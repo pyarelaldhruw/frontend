@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px;
+        }
+
+        .flex-container1{
+            width: 100%;
+            height: 200px;
+            background: #ffff55;
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+
+            .flex-items{
+                width: 80px;
+                height: 80px;
+                background-color: black;
+                color: #fff;
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .row{
+                position: absolute;
+                top: 0px; 
+            }
+        }
+        .flex-container2{
+            width: 100%;
+            height: 200px;
+            background: #ffff55;
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row-reverse;
+            position: relative;
+
+            .flex-items{
+                width: 80px;
+                height: 80px;
+                background-color: black;
+                color: #fff;
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .row{
+                position: absolute;
+                top: 0px; 
+            }
+        }
+        .flex-container3{
+            width: 100%;
+            height: 600px;
+            background: #ffff55;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            .flex-items{
+                width: 80px;
+                height: 80px;
+                background-color: black;
+                color: #fff;
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .row{
+                position: absolute;
+                top: 0px; 
+            }
+        }
+        .flex-container4{
+            width: 100%;
+            height: 600px;
+            background: #ffff55;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            position: relative;
+
+            .flex-items{
+                width: 80px;
+                height: 80px;
+                background-color: black;
+                color: #fff;
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .row{
+                position: absolute;
+                top: 0px; 
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flex-container1">
+        <h1 class="row">flex-direction: row;</h1>
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">6</div>
+    </div>
+    <br><br>
+    <div class="flex-container2">
+        <h1 class="row">flex-direction: row-reverse;</h1>
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">6</div>
+    </div>
+    <br><br>
+    <div class="flex-container3">
+        <h1 class="row">flex-direction: column;</h1>
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">6</div>
+    </div>
+    <br><br>
+    <div class="flex-container4">
+        <h1 class="row">flex-direction: column-reverse;</h1>
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">6</div>
+    </div>
+    <br><br>
+    
+</body>
+</html>
