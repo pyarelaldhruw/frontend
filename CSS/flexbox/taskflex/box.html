@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imagebox{
+            width: 90%;
+            height: 500px;
+            display: flex;
+            flex-flow: column wrap;
+
+            border: 5px solid #123456;
+            background: linear-gradient( to bottom right, #f00 0%, #0f0 40%,  #00f 60%);
+
+            .image{
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="imagebox" id="imagebox">
+        
+    </div>
+
+    <script>
+        let arr=["https://png.pngtree.com/png-clipart/20230312/ourmid/pngtree-transparent-watercolor-flowers-png-image_6646331.png","https://png.pngtree.com/png-vector/20220829/ourmid/pngtree-ic22827-vector-pink-and-blue-flower-floral-decoration-with-gold-wedding-png-image_6129036.png","https://www.transparentpng.com/thumb/flower/flowers-photo-png-34.png","https://cdn.pixabay.com/photo/2024/05/17/14/50/ai-generated-8768468_1280.png","https://png.pngtree.com/png-vector/20220801/ourmid/pngtree-cute-minimalist-flower-line-art-png-image_6095288.png","https://www.freeiconspng.com/thumbs/purple-flower-png/purple-flower-png-25.png","https://cdn.pixabay.com/photo/2024/05/17/14/50/ai-generated-8768466_640.png","https://png.pngtree.com/png-vector/20231108/ourmid/pngtree-pink-flower-cute-png-image_10448174.png","https://file.aiquickdraw.com/imgcompressed/img/compressed_e47e5dd3beb33422dca09a2826b3bb9b.webp"]
+
+        arr.forEach((img)=>{
+            document.getElementById("imagebox").innerHTML+=`<img src=${img} alt="" class="image">`
+        })
+        
+    </script>
+    
+</body>
+</html>

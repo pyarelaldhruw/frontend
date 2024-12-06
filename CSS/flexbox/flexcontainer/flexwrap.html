@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-wrap1{
+            width: 80%;
+            height: 200px;
+            margin: 10px;
+            border: 5px solid blue;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+            padding: 5px;
+
+            .flex-wraps{
+                width: 80px;
+                height: 80px;
+                background: #ff0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: #00f;
+                
+            }
+        }
+        .flex-wrap2{
+            width: 80%;
+            height: 200px;
+            margin: 10px;
+            border: 5px solid #f0f;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 5px;
+
+            .flex-wraps{
+                width: 80px;
+                height: 80px;
+                background: #0f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: #00f;
+                
+            }
+        }
+        .flex-wrap3{
+            width: 80%;
+            height: 200px;
+            margin: 10px;
+            border: 5px solid #805263;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            gap: 5px;
+            padding: 5px;
+
+            .flex-wraps{
+                width: 80px;
+                height: 80px;
+                background: #0ff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                           
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-wrap1">
+        <div class="flex-wraps">1</div>
+        <div class="flex-wraps">2</div>
+        <div class="flex-wraps">3</div>
+        <div class="flex-wraps">4</div>
+        <div class="flex-wraps">5</div>
+        <div class="flex-wraps">6</div>
+        <div class="flex-wraps">7</div>
+        <div class="flex-wraps">8</div>
+    </div>
+    <div class="flex-wrap2">
+        <div class="flex-wraps">1</div>
+        <div class="flex-wraps">2</div>
+        <div class="flex-wraps">3</div>
+        <div class="flex-wraps">4</div>
+        <div class="flex-wraps">5</div>
+        <div class="flex-wraps">6</div>
+        <div class="flex-wraps">7</div>
+        <div class="flex-wraps">8</div>
+    </div>
+    <div class="flex-wrap3">
+        <div class="flex-wraps">1</div>
+        <div class="flex-wraps">2</div>
+        <div class="flex-wraps">3</div>
+        <div class="flex-wraps">4</div>
+        <div class="flex-wraps">5</div>
+        <div class="flex-wraps">6</div>
+        <div class="flex-wraps">7</div>
+        <div class="flex-wraps">8</div>
+    </div>
+    
+</body>
+</html>
