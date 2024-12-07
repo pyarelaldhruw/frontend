@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-flow{
+            width: 49%;
+            border: 5px solid #963741;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 5px;
+            
+            .flex-items{
+                width: 100px;
+                height: 100px;
+                background: #789123;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: #00ffff;
+
+            }
+        }
+        .flex-flow1{
+            width: 49%;
+            height: 320px;
+            border: 5px solid #963741;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 5px;
+            
+            .flex-items{
+                width: 100px;
+                height: 100px;
+                background: #789123;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: #00ffff;
+
+            }
+        }
+
+        .flag{
+            width: 300px;
+            height: 200px;
+            /* border: 5px solid ; */
+            background:  linear-gradient(to bottom, orange 0%, orange 30%, white 30%, white 70%, green 60%, green );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            img{
+                width: 70px;
+                mix-blend-mode: b;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-flow">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">6</div>
+        <div class="flex-items">7</div>
+        <div class="flex-items">8</div>
+        <div class="flex-items">9</div>
+    </div>
+    <br><br>
+    <div class="flex-flow1">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">6</div>
+        <div class="flex-items">7</div>
+        <div class="flex-items">8</div>
+        <div class="flex-items">9</div>
+    </div>
+    <br><br>
+
+    <div class="flag">
+        <img src="https://png.pngtree.com/png-vector/20220819/ourmid/pngtree-ashok-chakra-png-image_6115909.png" alt="">
+
+    </div>
+    
+</body>
+</html>
