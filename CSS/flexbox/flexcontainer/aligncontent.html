@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexstart{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 50px;
+            border: 5px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1px;
+            align-content: flex-start;
+
+            .item{
+                width: 95%;
+                height: 50px;
+                background: #ff5;
+                border: 5px solid #852963;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+            }
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-evenly{
+            align-content: space-evenly;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexstart">
+        <div class="item">flexstart</div>
+        <div class="item">flexstart</div>
+        <div class="item">flexstart</div>
+    </div>
+
+    <div class="flexstart center">
+        <div class="item">center</div>
+        <div class="item">center</div>
+        <div class="item">center</div>
+    </div>
+    <div class="flexstart flex-end">
+        <div class="item">flex-end</div>
+        <div class="item">flex-end</div>
+        <div class="item">flex-end</div>
+    </div>
+    <div class="flexstart space-between">
+        <div class="item">space-between</div>
+        <div class="item">space-between</div>
+        <div class="item">space-between</div>
+    </div>
+    <div class="flexstart space-evenly">
+        <div class="item">space-evenly</div>
+        <div class="item">space-evenly</div>
+        <div class="item">space-evenly</div>
+    </div>
+    <div class="flexstart space-around">
+        <div class="item">space-around</div>
+        <div class="item">space-around</div>
+        <div class="item">space-around</div>
+    </div>
+</body>
+</html>
