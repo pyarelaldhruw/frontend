@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+            background: #0ff;
+            display: grid;
+            grid-template-rows: 80px 80px 80px;
+            grid-template-columns: 80px 80px 80px;
+            gap:10px;
+            
+
+            .grid-items{
+                background: #0f0;
+                padding-top: 30px;
+                text-align: center;
+                font-size: 25px;
+                color: #270000;
+                
+                
+            }
+
+
+            
+
+        }
+
+        .container1{
+            justify-content: start;
+        }
+        .container2{
+            justify-content: center;
+        }
+        .container3{
+            justify-content: end;
+        }
+        .container4{
+            justify-content: space-between;
+        }
+        .container5{
+            justify-content: space-evenly;
+        }
+        .container6{
+            justify-content: space-around;
+        }
+        .container7{
+            grid-template-rows: auto;
+            justify-content: baseline;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container container1">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+    </div>
+    <div class="grid-container container2">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+    </div>
+    <div class="grid-container container3">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+    </div>
+    <div class="grid-container container4">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+    </div>
+    <div class="grid-container container5">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+    </div>
+    <div class="grid-container container6">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+    </div>
+    <div class="grid-container container7">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+       
+    </div>
+    
+</body>
+</html>
