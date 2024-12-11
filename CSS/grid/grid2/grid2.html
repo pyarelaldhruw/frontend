@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .item1{grid-area: i1;}
+        .item2{grid-area: i2;}
+        .item3{grid-area: i3;}
+        .item4{grid-area: i4;}
+        .item5{grid-area: i5;}
+        .item6{grid-area: i6;}
+        .item7{grid-area: i7;}
+        .item8{grid-area: i8;}
+        .item9{grid-area: i9;} */
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        .grid-container{
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-areas:
+                'i1 i2 i3'
+                'i4 i5 i6'
+                'i7 i8 i9';
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <img src="https://m.media-amazon.com/images/I/71Jsl1AlQ-L._SX569_.jpg" alt="" class="item1">
+        <img src="https://m.media-amazon.com/images/I/41TXGZygZzL.jpg" alt="" class="item2">
+        <img src="https://m.media-amazon.com/images/I/71CpQ7XHnFL._AC_UL320_.jpg" alt="" class="item3">
+        <img src="https://m.media-amazon.com/images/I/41tSxoQFIzS._AC_UL320_.jpg" alt="" class="item4">
+        <img src="https://m.media-amazon.com/images/I/81-29MfbY5L._AC_UL320_.jpg" alt="" class="item5">
+        <img src="https://m.media-amazon.com/images/I/71EzSY5ZHeL._AC_UL320_.jpg" alt="" class="item6">
+        <img src="https://m.media-amazon.com/images/I/41tEuPx1iUL._AC_UL320_.jpg" alt="" class="item7">
+        <img src="https://m.media-amazon.com/images/I/81yYRYsNsXL._AC_UL320_.jpg" alt="" class="item8">
+        <img src="https://m.media-amazon.com/images/I/71KPJm-py4L._AC_UL320_.jpg" alt="" class="item9">
+    </div>
+
+</body>
+
+</html>
