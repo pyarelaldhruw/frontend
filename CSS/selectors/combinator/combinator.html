@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            margin-top: 50px;
+        }
+
+        /* .descendent{
+           h1{color: red;}
+           h2{color: green;}
+           h3{color: blue;}
+           h1, h2, h3{font-size: 20px;}
+        } */
+        .descendent h1 {
+            color: red;
+        }
+
+        .descendent h2 {
+            color: green;
+        }
+
+        .descendent h3 {
+            color: blue;
+        }
+
+        .descendent h1,
+        .descendent h2,
+        .descendent h3 {
+            font-size: 30px;
+        }
+
+        /* child */
+        /* .child > h1, .child>h2, .child>h3{
+            color: blue;
+            font-size: 40px;
+        } */
+        .child>h1 {
+            color: blue;
+            font-size: 40px;
+        }
+
+        .child>h2 {
+            color: red;
+            font-size: 40px;
+        }
+
+        .child>h3 {
+            color: green;
+            font-size: 40px;
+        }
+
+        /* adjacent */
+
+        .adjacent h3+h2{
+            color: blue;
+        }
+        .general h1~h2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>descendent combinator selectors</h1>
+    <div class="descendent">
+        <h1>heading1</h1>
+        <h2>heading2</h3>
+            <h3>heading3</h3>
+    </div>
+
+    <h1> child combinator selectors</h1>
+    <div class="child">
+        <h1>heading1</h1>
+        <h2>heading2</h3>
+            <h3>heading3</h3>
+    </div>
+
+    <h1>adjacent sibling combinator selector</h1>
+    <div class="adjacent">
+        <h1>heading1</h1>
+        <h2>heading2</h2>
+        <h3>heading3</h3>
+        <h2>heading2</h2>
+        <h5>heading5</h5>
+    </div>
+
+
+    <h1>general sibling combinator selector</h1>
+    <div class="general">
+        <h1>heading1</h1>
+        <h2>heading2</h2>
+        <h3>heading3</h3>
+        <h2>heading2</h2>
+        <h5>heading5</h5>
+        <h2>heading2</h2>
+        <h1>heading1</h1>
+        <h2>heading2</h2>
+    </div>
+</body>
+
+</html>
