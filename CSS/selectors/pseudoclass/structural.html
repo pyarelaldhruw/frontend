@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .structural :first-child{
+            color: red;
+        }
+        .structural :last-child{
+            color: green;
+        }
+        .structural1 h1:first-child{
+            color: blue;
+        }
+        .structural1 h6:last-child{
+            color: red;
+        }
+        .structural1 h2:first-of-type{
+            color: #ab8553;
+        }
+        .structural1 h2:last-of-type{
+            color: #2589af;
+        }
+        .structural1 h2:last-of-type{
+            color: #2589af;
+        }
+        .structural2 p:nth-child(1){color: #2a07f0;}
+        .structural2 p:nth-child(2){color: #22f007;}
+        .structural2 p:nth-child(3){color: #f7125e;}
+        .structural2 p:nth-child(4){color: #ec6b15;}
+        .structural2 p:nth-child(5){color: #eb0dc6;}
+        .structural2 p:nth-child(6){color: #cc5959;}
+
+        .structural3 p:only-child{color: #cc5959;}
+        .structural3 p:only-of-type{color: #cc5959;}
+    </style>
+</head>
+<body>
+    <!-- <div class="structural">
+        <p>paragrapgh1</p>
+        <p>paragrapgh2</p>
+        <p>paragrapgh3</p>
+        <p>paragrapgh4</p>
+        <p>paragrapgh5</p>
+        <p>paragrapgh6</p>
+    </div> -->
+    <!-- <div class="structural1">
+        <h1>heading1</h1>
+        <h2>heading2</h2>
+        <h2>heading2</h2>
+        <h3>heading3</h3>
+        <h4>heading4</h4>
+        <h5>heading5</h5>
+        <h6>heading6</h6>
+    </div> -->
+    <!-- <div class="structural2">
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+        <p>paragraph3</p>
+        <p>paragraph4</p>
+        <p>paragraph5</p>
+        <p>paragraph6</p>
+    </div> -->
+    <div class="structural3">
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+        <h2>heading2</h2>
+        <!-- <p>paragraph2</p>
+        <p>paragraph3</p>
+        <p>paragraph4</p>
+        <p>paragraph5</p>
+        <p>paragraph6</p> -->
+    </div>
+</body>
+</html>
