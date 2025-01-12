@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100vw;
+            height: 60px;
+            /* border: 2px solid #ff0000; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 15px;
+            /* border-bottom: 5px solid #00ffff; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background: #25de89;
+
+            .logo {
+                width: 16%;
+                height: 45px;
+                /* border: 5px solid #0000ff; */
+                display: flex;
+                /* justify-content: space-between; */
+                align-items: center;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+
+                }
+
+                h1 {
+                    font-size: 28px;
+                    font-family: sans-serif;
+                    padding-left: 10px;
+                    /* border: 2px solid #ff0000; */
+                }
+            }
+
+            .nav {
+                width: 50%;
+                height: 45px;
+                /* border: 5px solid #0000ff; */
+
+                ul {
+                    width: 100%;
+                    height: 36px;
+                    /* border: 5px solid #00ffff; */
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    list-style: none;
+
+                    li {
+                        font-size: 15px;
+                        font-family: cursive;
+                    }
+
+                }
+            }
+            .hamburger{
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        @media screen and (max-width:950px) {
+            .header {
+
+                .logo {
+                    width: 19%;
+                    /* border: 2px solid #ff0000; */
+
+                    h1 {
+                        font-size: 28px;
+                        font-family: sans-serif;
+                    }
+                }
+
+                .nav {
+                    width: 50%;
+                }
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            .header {
+
+                .logo {
+                    width: 30%;
+                    /* border: 2px solid #ff0000; */
+
+                    h1 {
+                        font-size: 25px;
+                        font-family: sans-serif;
+                    }
+                }
+
+                .nav {
+                    width: 65%;
+                    /* border: 2px solid #0000ff; */
+                }
+            }
+        }
+
+        @media screen and (max-width:560px) {
+            .header {
+
+                .logo {
+                    width: 40%;
+                    /* border: 2px solid #ff0000; */
+
+                    img {display: none;}
+
+                    h1 {
+                        font-size: 22px;
+                        padding-left:0px;
+                    }
+                }
+
+                .nav {
+                    width: 100%;
+                    height: 50vh;
+                    padding: 30px;
+                    background:#25de89;
+                    position: absolute;
+                    top: 55px;
+                    right: 0px;
+                    display: none;
+                    /* border: 2px solid #0000ff; */
+                    ul{
+                        flex-direction: column;
+                        align-items: flex-end;
+                        gap: 10px;
+                        li{
+                            font-size:17px;
+                        }
+                    }
+                }
+
+                .hamburger{
+                    width: 20px;
+                    height: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    div{
+                        width: 20px;
+                        height: 4px;
+                        background:#000000;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../../html.png" alt="html">
+            <h1>HEADER</h1>
+        </div>
+        <nav id="nav" class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Project</li>
+                <li>Service</li>
+                <li>Contactus</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <div id="hamburger" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header><br><br>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', () => {
+            if(document.getElementById('nav').style.display==="none"){
+                document.getElementById('nav').style.display="block";  
+            }
+            else{
+                 document.getElementById('nav').style.display="none";
+            }
+            
+        })
+    </script>
+</body>
+
+</html>
